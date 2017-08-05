@@ -1,0 +1,13 @@
+<title>Student Form</title>
+
+<body>
+	<h1 align=center> Student Form </h1>
+	
+<h1 align=center> {{ students.count }} Students:</h1>
+
+{% for students in students %}
+	<p align=center>First Name: {{ students.first_name }} {{ students.middle_name }} {{ students.last_name }}</p>
+	<p align=center>------------------------------------</p>
+{% endfor %}
+
+</body>

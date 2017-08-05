@@ -1,0 +1,17 @@
+<title>Faculty Form</title>
+
+<body>
+	<h1 align=center> Faculty Form </h1>
+	
+<h1 align=center> {{ faculty.count }} Faculties:</h1>
+
+{% for faculty in faculty %}
+	<p align=center>First Name: {{ faculty.first_name }}</p>
+	<p align=center>Last Name: {{ faculty.last_name }}</p>
+	<p align=center>Middle Name: {{ faculty.middle_name }}</p>
+	<p align=center>Position: {{ faculty.position }}</p>
+	<p align=center>Bio: {{ faculty.bio }}</p>
+	<p align=center>------------------------------------</p>
+{% endfor %}
+
+</body>
